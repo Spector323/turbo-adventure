@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTrieop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
+</head>
+<body>
+    <header>
+        <div class="head-block1">
+            <nav>
+                <div class="logo">GoTrieop</div>
+                <div class="burger" onclick="toggleMenu()">
+                    <div class="burger-icon"></div>
+                    <div class="burger-icon"></div>
+                    <div class="burger-icon"></div>
+                </div>
+                
+                <ul class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                </ul>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="sign-up">Sign up</a>
+                    <a href="#" class="login">Login</a>
+                </div>
+                
+                <!-- Бургер-меню -->
+                <div class="burger-menu">
+                    <ul class="burger-menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="sign-up">Sign up</a></li>
+                        <li><a href="#" class="login">Login</a></li>
+                    </ul>
+                    <button class="close-menu" onclick="toggleMenu()">&#10006;</button>
+                </div>
+                
+            </nav>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Explore The Natural Beauty Of Halmahera With Us</h1>
+                    <p>Explore the beauty of god's earth in a beautiful forest and have fun.</p>
+                    <button class="button_1">Explore Now</button>
+                </div>
+                <img src="./img/1.png" alt="" class="hero-image">
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="destinations">
+            <div class="destinations-block">
+                <div>
+                    <h1>Choice Of</h1>
+                    <h1 style="font-size: 60px;">Destinations</h1>
+                </div>
+                <p style="color: #777;">Explore the beauty of god's earth <br>
+                in a beautiful forest and have fun</p>
+                <button class="button_2">Explore Now</button>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="destination">
+                        <img src="./img/2.svg" alt="">
+                    </div>
+                    <div class="destination">
+                        <img src="./img/3.svg" alt="">
+                    </div>
+                    <div class="destination">
+                        <img src="./img/2.svg" alt="">
+                    </div>
+                    <div class="destination">
+                        <img src="./img/3.svg" alt="">
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section class="testimonials">
+            <img src="./img/5.png" alt="" class="img_1">
+            <div class="ts">
+                <h2 style="font-size: 45px;">What do customers say about us?</h2>
+                <div class="testimonial">
+                    <img src="./img/4.png" alt="Customer Photo">
+                    <div class="testimonial-content">
+                        <h3 style="font-size: 33px;">Alpanasap</h3>
+                        <p style="color: #777;font-size: 25px;">Japung, Indonesia</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <p style="font-size: 22px;">Very satisfying service makes it <br> comfortable, a beautiful place in the world.</p>
+                    <span style="color: #ffd700; font-size: 60px;">★★★☆☆</span>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Prepare Yourself And <br> Start Exploring With Us.</h2>
+            <p>There's the best discount for you today.</p>
+            <a href="#" class="get-started-button">Get Started</a>
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe To Our Newsletter</h2>
+            <div class="subscribe-form">
+                <input class="subscribeInput" type="email" placeholder="Yourmail@mail.com">
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-block1">
+            <nav>
+                <div class="footer-logo">GoTrieop</div>
+                <ul class="footer-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="src.js"></script>
+</body>
+</html>
